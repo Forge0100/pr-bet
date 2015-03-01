@@ -1,22 +1,12 @@
-.m-l-10 {
-	margin-left:10px;
-}
+.m-l-10 { margin-left:10px; }
 
-.m-r-10 {
-	margin-right:10px; 
-}
+.m-r-10 { margin-right:10px; }
 
-.m-t-10 {
-	margin-top:10px; 
-}
+.m-t-10 { margin-top:10px; }
 
-.m-b-10 {
-	margin-bottom:10px; 
-}
+.m-b-10 { margin-bottom:10px; }
 
-.p-0 {
-	padding-top:6px;
-}
+.p-0 { padding-top:6px; }
 
 *, *:before, *:after {box-sizing:  border-box !important;}
 
@@ -26,7 +16,6 @@
  -webkit-column-width: 18em;
  -moz-column-gap: 1em;
  -webkit-column-gap:1em; 
-  
 }
 
 .ms .item {
