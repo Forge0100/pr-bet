@@ -25,7 +25,7 @@ class Game extends Eloquent {
 			[
 				'title' => 'required|min:2|max:100',
 				'description' => 'required|min:2',
-				'image' => 'required|min:2|max:100',
+				'image' => 'required',
 				'game' => 'required|numeric',
 				'video_player' => 'required|min:2',
 				'command_1' => 'required|min:2|max:100',

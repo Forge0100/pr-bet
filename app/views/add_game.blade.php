@@ -7,7 +7,7 @@
 @section('content')
   <div class="row">
     <div class="col-md-5 col-md-offset-3">
-      {{ Form::open([ 'url' => '/add_game', 'enctype' => 'multipart/form-data' ]) }}
+      {{ Form::open([ 'url' => '/add_game', 'files' => 'true' ]) }}
         <div class="form-group">
           <label for="title">Название</label>
           {{ Form::text('title', '', ['class' => 'form-control', 'id' => 'title']) }}
@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
           <label for="start_date">Дата начала</label>
-          {{ Form::text('start_date', '', ['class' => 'form-control', 'id' => 'start_date', 'placeholder' => 'Пример: 2015-01-24 20:36:00']) }}
+          {{ Form::text('start_date', '', ['class' => 'form-control']) }}
         </div>
         <div class="form-group">
           <label for="bet">Ставка</label>

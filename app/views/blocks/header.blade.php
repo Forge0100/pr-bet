@@ -6,8 +6,6 @@
     </div>
     <div id="bs-example-colapse-1" class="collapse navbar-collapse">
       <ul class="nav navbar-nav text-uppercase">
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#contact">Контакты</a></li>
         @if(!Auth::check())
           <li>{{ HTML::link('/register', 'Регистрация') }}</li>
         @else

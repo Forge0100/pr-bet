@@ -11,6 +11,11 @@
 |
 */
 
+// Биндинги моих классов
+App::bind('AppBet', function() {
+	return new \lib\AppBet\Main;
+});
+
 // Страници авторизированных пользователей
 Route::group(array('before' => 'auth'), function()
 {
