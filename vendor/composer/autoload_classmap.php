@@ -7,7 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AppBet\\Main' => $baseDir . '/app/lib/AppBet/Main.php',
+    'Balance' => $baseDir . '/app/models/Balance.php',
+    'BalancesController' => $baseDir . '/app/controllers/BalancesController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
+    'Bets' => $baseDir . '/app/models/Bets.php',
+    'BetsController' => $baseDir . '/app/controllers/BetsController.php',
     'Boris\\Boris' => $vendorDir . '/d11wtq/boris/lib/Boris/Boris.php',
     'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
     'Boris\\ColoredInspector' => $vendorDir . '/d11wtq/boris/lib/Boris/ColoredInspector.php',
@@ -31,6 +35,7 @@ return array(
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'CreateBalancesTable' => $baseDir . '/app/database/migrations/2015_02_06_151547_create_balances_table.php',
     'CreateBetsTable' => $baseDir . '/app/database/migrations/2014_12_31_090031_create_bets_table.php',
+    'CreateCategoriesTable' => $baseDir . '/app/database/migrations/2015_03_16_185029_create_categories_table.php',
     'CreateGamesTable' => $baseDir . '/app/database/migrations/2014_12_31_090101_create_games_table.php',
     'CreateHistoryTable' => $baseDir . '/app/database/migrations/2015_02_06_153957_create_history_table.php',
     'CreateInvitesTable' => $baseDir . '/app/database/migrations/2015_02_12_033557_create_invites_table.php',

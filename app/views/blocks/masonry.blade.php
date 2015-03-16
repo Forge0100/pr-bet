@@ -9,8 +9,6 @@
 					<div class="caption">
 						<h3>{{ HTML::link('/view/'.$game->id, $game->title) }}</h3>
 						<p>{{ str_limit($game->description, 35) }}</p>
-						<div class="col-sm-6"><span class="label label-primary">{{$game->command_1}}</span></div>
-						<div class="col-sm-6"><span class="label label-success">{{$game->command_2}}</span></div>
 					</div>
 				</div>
 			</div>

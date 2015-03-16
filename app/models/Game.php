@@ -25,8 +25,8 @@ class Game extends Eloquent {
 			[
 				'title' => 'required|min:2|max:100',
 				'description' => 'required|min:2',
-				'image' => 'required',
-				'game' => 'required|numeric',
+				'image' => 'require|mimes:jpg,gif,png', // mimes:jpg,gif,png может и не работать, нужно проверять
+				'game' => 'required|integer', // было numeric
 				'video_player' => 'required|min:2',
 				'command_1' => 'required|min:2|max:100',
 				'command_2' => 'required|min:2|max:100',

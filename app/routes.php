@@ -26,6 +26,7 @@ Route::group(array('before' => 'auth'), function()
 	// POST-запросы
 	Route::post('/add_news', 'NewsController@add');
 	Route::post('/add_game', 'GameController@add');
+	Route::post('/add_bet', 'BetsController@add');
 	Route::post('/profile/edit', 'UserController@postEditProfile');
 	Route::post('/profile/invite', 'UserController@postAddInvite');
 

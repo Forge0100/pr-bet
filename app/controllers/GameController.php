@@ -4,7 +4,7 @@ class GameController extends BaseController {
 
 	public function game()
 	{
-		return View::make('add_game')->with('news', News::all());
+		return View::make('add_game')->with(['news' => News::all(), 'categories' => DB::table('categories')->lists('title')]);
 	}
 
 	public function add()

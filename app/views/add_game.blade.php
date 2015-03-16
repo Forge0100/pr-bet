@@ -22,11 +22,7 @@
         </div>
         <div class="form-group">
           <label for="game">Какая игра?</label>
-          {{ Form::select('game', array(
-            0 => 'CS 1.6',
-            1 => 'CS Source',
-            2 => 'CS:GO'
-          ), '', ['class' => 'form-control', 'id' => 'game']) }}
+          {{ Form::select('game', $categories, '', ['class' => 'form-control', 'id' => 'game']) }}
         </div>
         <div class="form-group">
           <label for="video_player">Код видеоплеера</label>

@@ -17,10 +17,23 @@
 
           <div class="panel-body">
            <h3>{{ $game->title }}</h3>
-           <div class="btn-group" role="group" aria-label="...">
-             <button type="button" class="btn btn-primary">{{ $game->command_1 }}</button>
-             <button type="button" class="btn btn-success">{{ $game->command_2 }}</button>
-           </div>
+              @if (Bets::checkBet($game->id))
+                <p>Cool</p>
+              @else
+
+                {{ Form::open([ 'url' => '/add_bet', 'class' => 'bet-form' ]) }}
+                  {{ Form::hidden('number_game', $game->id) }}
+                  {{ Form::hidden('command', 0) }}
+                  {{ Form::submit($game->command_1, ['class' => 'btn btn-primary m-r-10']) }}
+                {{ Form::close() }}
+
+                {{ Form::open([ 'url' => '/add_bet', 'class' => 'bet-form' ]) }}
+                  {{ Form::hidden('number_game', $game->id) }}
+                  {{ Form::hidden('command', 1) }}
+                  {{ Form::submit($game->command_2, ['class' => 'btn btn-success']) }}
+                {{ Form::close() }}
+
+              @endif
           </div>
 
            <ul class="list-group">

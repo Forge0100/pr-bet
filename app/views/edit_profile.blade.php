@@ -19,7 +19,7 @@
         {{ Form::submit('Обновить', ['class' => 'btn btn-default']) }}
       {{ Form::close() }}
       <br>
-      @if (Auth::user()->root == 1)
+      @if (Auth::user()->root == 0)
         {{ Form::open([ 'url' => '/profile/invite']) }}
           <div class="form-group">
             <label for="inputInvite">Инвайт</label>

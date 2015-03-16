@@ -8,6 +8,10 @@
 
 .p-0 { padding-top:6px; }
 
+.bet-form { 
+	float: left;
+}
+
 *, *:before, *:after {box-sizing:  border-box !important;}
 
 
