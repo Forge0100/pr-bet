@@ -39,6 +39,18 @@ class UserController extends BaseController {
 		}
 	}
 
+	public function postWebmoneyProfile()
+	{
+		$data = Input::all();
+
+		if( empty($data['wmr']) || empty($data['wmz']) )
+			return Redirect::back()->withError('');
+		else{
+			User::editWebmoney($data);
+			return Redirect::back();
+		}
+	}
+
 	public function postAddInvite()
 	{
 		$data = Input::all();

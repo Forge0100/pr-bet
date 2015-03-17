@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration {
 			$t->string('email');
 			$t->string('password', 128);
 			$t->boolean('root');
+			$t->string('wmr');
+			$t->string('wmz');
 			$t->string('remember_token');
 			$t->timestamps();
 		});

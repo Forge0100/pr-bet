@@ -29,8 +29,8 @@
           <label for="second-name">Фамилия</label>
           {{ Form::text('second_name', '', ['class' => 'form-control', 'id' => 'second_name']) }}
         </div>
-        <small>* все поля обязательны для заполнения!</small>
-        {{ Form::submit('Зарегистрироваться', ['class' => 'btn btn-primary']) }}
+        <small>* все поля обязательны для заполнения!</small><br>
+        {{ Form::submit('Зарегистрироваться', ['class' => 'btn btn-primary pull-right']) }}
       {{ Form::close() }}
     </div>
     <div class="col-md-4">

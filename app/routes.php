@@ -29,6 +29,7 @@ Route::group(array('before' => 'auth'), function()
 	Route::post('/add_bet', 'BetsController@add');
 	Route::post('/profile/edit', 'UserController@postEditProfile');
 	Route::post('/profile/invite', 'UserController@postAddInvite');
+	Route::post('/profile/webmoney', 'UserController@postWebmoneyProfile');
 
 	// Нейтральные запросы
 	Route::any('/logout', 'UserController@logout');

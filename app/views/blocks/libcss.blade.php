@@ -5,4 +5,5 @@
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico"/>
 {{ HTML::style('css/dataurl.css'); }}
 {{ HTML::style('css/style.css'); }}
+{{ HTML::style('css/jquery.datetimepicker.css'); }}
 {{ HTML::script('js/pace.min.js'); }}

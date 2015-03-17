@@ -55,6 +55,14 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 						->update(['id_user' => Auth::user()->id]);
 	}
 
+	public static function editWebmoney( $data )
+	{
+		$wmr = ($data['wmr'] != '')? $data['wmr'] : ' ';
+		$wmz = ($data['wmz'] != '')? $data['wmz'] : ' ';
+
+		return DB::update('update users set wmr = ?, wmz = ? where id = ?', [$wmr, $wmz, Auth::user()->id]);	
+	}
+
 	public static function updateStatusProfile()
 	{
 		return DB::table(DB::raw('invites i, users u'))

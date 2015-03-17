@@ -20,4 +20,9 @@ $(function(){
 		return false;
 	});
 
+	jQuery('#datetimepicker').datetimepicker({
+		format:'Y-m-d H:i:s',
+		lang:'ru'
+	});
+
 });

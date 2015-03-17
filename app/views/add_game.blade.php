@@ -25,20 +25,20 @@
           {{ Form::select('game', $categories, '', ['class' => 'form-control', 'id' => 'game']) }}
         </div>
         <div class="form-group">
-          <label for="video_player">Код видеоплеера</label>
-          {{ Form::textarea('video_player', null, ['class' => 'form-control', 'id' => 'video_player', 'size' => '10x5']) }}
+          <label for="video_player">Ссылка на трансляцию</label>
+          {{ Form::text('video_player', null, ['class' => 'form-control', 'id' => 'video_player', 'placeholder' => 'http://']) }}
         </div>
         <div class="form-group">
-          <label for="command_1">Название комманды 1</label>
+          <label for="command_1">Название комманды №1</label>
           {{ Form::text('command_1', '', ['class' => 'form-control', 'id' => 'command_1']) }}
         </div>
         <div class="form-group">
-          <label for="command_2">Название комманды 2</label>
+          <label for="command_2">Название комманды №2</label>
           {{ Form::text('command_2', '', ['class' => 'form-control', 'id' => 'command_2']) }}
         </div>
         <div class="form-group">
           <label for="start_date">Дата начала</label>
-          {{ Form::text('start_date', '', ['class' => 'form-control']) }}
+          {{ Form::text('start_date', '', ['class' => 'form-control', 'id' => 'datetimepicker']) }}
         </div>
         <div class="form-group">
           <label for="bet">Ставка</label>
