@@ -20,6 +20,7 @@ App::bind('AppBet', function() {
 Route::group(array('before' => 'auth'), function()
 {
 	Route::get('/add_game', 'GameController@game');
+	Route::get('/report/{id?}', 'ReportsController@report')->where('id', '[0-9]+');
 	Route::get('/profile', 'UserController@profile');
 	Route::get('/profile/edit', 'UserController@editProfile');
 
@@ -27,6 +28,7 @@ Route::group(array('before' => 'auth'), function()
 	Route::post('/add_news', 'NewsController@add');
 	Route::post('/add_game', 'GameController@add');
 	Route::post('/add_bet', 'BetsController@add');
+	Route::post('/view/report', 'ReportsController@add');
 	Route::post('/profile/edit', 'UserController@postEditProfile');
 	Route::post('/profile/invite', 'UserController@postAddInvite');
 	Route::post('/profile/webmoney', 'UserController@postWebmoneyProfile');

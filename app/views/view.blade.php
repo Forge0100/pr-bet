@@ -38,7 +38,7 @@
 
            <ul class="list-group">
              <li class="list-group-item">
-               <b>Дата начала: {{ $game->start_date }}</b>
+               <b>Дата начала: {{ $game->start_date }}</b> {{ HTML::link('/report/'.$game->id, 'Жалоба') }}
                <p>{{ $game->description }}</p>
              </li>
            </ul>
