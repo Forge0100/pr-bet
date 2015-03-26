@@ -25,7 +25,7 @@
             <td>{{ $game->command_1 }} vs {{ $game->command_2 }}</td>
             <td>{{ $game->start_date }}</td>
             <td>{{ $game->bet }}</td>
-            <td><a href="/view/{{ $game->id }}">Поставить</a></td>
+            <td>{{ HTML::link('/view/'.$game->id, 'Поставить') }}</td>
           </tr>
         @endforeach
       </tbody>

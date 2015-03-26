@@ -7,7 +7,7 @@
 @section('content')
   <div class="row">
    @if (isset($game))
-      <div class="col-sm-9">
+      <div class="col-md-9 col-sm-8">
 
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="{{ $game->video_player }}"></iframe>
@@ -46,8 +46,9 @@
         </div>
 
       </div>
-      <div class="col-sm-3">
-        Text
+      <div class="col-md-3 col-sm-4">
+        @include('blocks.comments')
+        {{ HTML::link('/category/'.$game->game, 'Похожие ставки...') }}
       </div>
    @endif
   </div>

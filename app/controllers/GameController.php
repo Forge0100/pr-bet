@@ -34,7 +34,10 @@ class GameController extends BaseController {
 	{
 		$games = Game::where('id', '=', $id)->get();
 		$game = $games[0];
-		return View::make('view')->with(['game' => $game]);
+
+		$comments = Comment::where('user_id', '=', $id)->get();
+
+		return View::make('view')->with(['game' => $game, 'comments' => $comments]);
 	}
 
 	public function categoryGame($id = null)
